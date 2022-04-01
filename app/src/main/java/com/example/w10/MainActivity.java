@@ -53,10 +53,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void goButton(View v){
         // add site to arrlist of previous sites
-        if(prevURL.size()<=9){
+
+        if(prevURL.size()<=10){
         prevURL.add(0,web.getUrl());
         }else{
-            prevURL.remove(9);
+            prevURL.remove(10);
             prevURL.add(0,web.getUrl());
         }
         //clears all forward links when leaving history pipeline
