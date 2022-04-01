@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void goButton(View v){
         // add site to arrlist of previous sites
-
+        // made to fit maximum amount of 0-> 10 sites to manage ram total 11
         if(prevURL.size()<=10){
         prevURL.add(0,web.getUrl());
         }else{
